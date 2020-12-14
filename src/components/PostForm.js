@@ -24,6 +24,7 @@ function PostForm() {
       data.getPosts = [result.data.createPost, ...data.getPosts]
       console.log('data.getPosts2', data.getPosts)
       console.log('getPostsSend', data)
+
       proxy.writeQuery({
         query: FETCH_POSTS_QUERY, data: {
           getPosts: [result.data.createPost, ...data.getPosts]
